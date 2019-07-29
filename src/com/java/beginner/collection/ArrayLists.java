@@ -63,16 +63,18 @@ public class ArrayLists {
 		while (iterator.hasNext()) {
 			System.out.print(iterator.next() + " ");
 		}
-		
+
 		System.out.println();
 		System.out.println("Sort list: ");
 		Collections.sort(list);
 		System.out.println(list);
-		
 
 		// Iterating Integer ArrayList
 		System.out.println("\n");
-		ArrayList<Integer> digits = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6));
+//		ArrayList<Integer> digits = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 6));
+		ArrayList<Integer> digits = new ArrayList<>();
+		digits.add(1);
+		digits.add(2);
 
 		Iterator<Integer> intIterator = digits.iterator();
 		System.out.println("List iterate integer elements : ");

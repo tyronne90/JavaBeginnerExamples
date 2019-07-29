@@ -14,11 +14,16 @@ public class JavaExceptions {
 		throw new NullPointerException();
 	}
 	
-	public static void methodFour() throws InvalidNumberException {
-		throw new InvalidNumberException();
+	public static void methodFour(int tot) throws InvalidNumberException {
+		if(tot < 2) {
+			System.out.println("Number is fine");
+		}else {
+			throw new InvalidNumberException("Number is too small");
+		}
+		
 	}
 
-	public static void main(String[] args) throws InvalidNumberException {
+	public static void main(String[] args) {
 		int num1 = 100;
 		int num2 = 20;
 		int tot = 0;
@@ -49,7 +54,9 @@ public class JavaExceptions {
 			
 //			methodThree();
 			
-			methodFour();
+			methodFour(tot);
+			
+			
 			
 		} catch (ArithmeticException e) {
 			System.out.println("Exception -> Cannot divided by zero");
@@ -62,7 +69,7 @@ public class JavaExceptions {
 		}catch(NullPointerException e) {
 			System.out.println("Exception -> Null pointer exception");
 		}catch(InvalidNumberException e) {
-			System.out.println("Exception -> Invalid Number exception");
+			System.out.println("Exception -> " + e);
 		}
 
 	}
