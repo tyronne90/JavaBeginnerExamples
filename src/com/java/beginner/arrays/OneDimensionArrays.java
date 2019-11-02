@@ -102,6 +102,7 @@ public class OneDimensionArrays {
 			}
 		}
 		System.out.println("Max :" + max);
+		
 		for (int i = 0; i < f.length; i++) {
 			if (f[i] < min) {
 				min = f[i];

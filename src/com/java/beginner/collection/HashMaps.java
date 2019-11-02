@@ -32,7 +32,7 @@ public class HashMaps {
 		
 		System.out.println("\n");
 		String subjectName[] = {"English", "Tamil", "ICT", "Physics"};  
-		String subjectId[] = {"ENG", "TAM", "IT", "PHY"};  
+		String subjectId[] = {"ENG", "TAM", "ICT", "PHY"};  
 		
 		Map<String, String> listSubjects = new HashMap<>();
 		
